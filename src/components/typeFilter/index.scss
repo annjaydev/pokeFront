@@ -1,0 +1,22 @@
+.type-filter {
+  margin-bottom: 30px;
+
+  .MuiInputBase-input {
+    width: 240px !important;
+    padding: 10px;
+
+    color: #000000;
+    background-color: aliceblue;
+    border-radius: 4px;
+  }
+
+  .MuiSelect-select:focus {
+    color: #ffffff;
+    background-color: rgb(161, 178, 192);
+    border-radius: 4px;
+  }
+
+  .MuiFormLabel-root {
+    color: #000000;
+  }
+}

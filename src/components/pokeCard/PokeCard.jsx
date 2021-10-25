@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip } from '@material-ui/core';
+import { Tooltip, Chip } from '@material-ui/core';
 import { PokeInfo } from '../pokeInfo/PokeInfo';
 import './index.scss';
 
@@ -27,6 +27,12 @@ export const PokeCard = ({ pokeInfo }) => {
         <p className='pokemon-card__name'>
           {pokeInfo.name.toUpperCase()}
         </p>
+        <Chip
+            size='small'
+            label={pokeInfo.types[0].type.name}
+            clickable
+            color='primary'
+          />
       </div>
     </Tooltip>
   );
